@@ -1,0 +1,46 @@
+/* CSS BY Jessica Seapno */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS RESET */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ROOT VARIABLES */
+:root {
+    --primary-color: #1F2A44, #76885B, #E5C185, #F8F4EC, #2B2B2B, #FAF9F6;
+    --text-dark: #2B2B2B;
+    --font-main:"Playfair Display";
+}
+/* GLOBAL STYLES (mobile first/small) */
+@media screen and(min-width="200px") {
+
+    body {
+        display:grid;
+        grid-row:inherit;
+        font-style:"Playfair Display";
+    }
+
+    h1 {
+        color: #1F2A44;
+
+    }
+}
+
+/* MEDIA QUERY (medium) */
+
+@media screen and(min-width="600px") {
+
+}
+
+/* MEDIA QUERY (large) */
+@media screen and(min-width="900px") {
+
+}
+/* MEDIA QUERY (xl) */
+@media screen and(min-width="1x") {
+
+}
