@@ -128,8 +128,122 @@ hr.divider {
 .full-width ul li {
     font-size: smaller;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gallery-card {
+    background-color:#FAF9F6;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.gallery-card figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-top: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.gallery-link a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.gallery-btn-container {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    grid-row: 1/-1;
+}
+
+.btn-gallery {
+    display: inline-block;
+    min-width:200px;
+    background-color:#76885B;
+    color:#FAF9F6;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #1F2A44;
+    color:#FAF9F6;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-style: normal;
+}
+
+
+.footer-contact {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-contact address {
+    font-style: normal;
+    line-height: 2;
+}
+
+.footer-contact .address {
+    margin-bottom: 1rem;
+}
+
+.footer-contact .phone, .footer-contact .email {
+    margin-bottom: 1rem;
+}
+
+.footer-contact a {
+    color:#E5C185;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.socials {
+    color:#E5C185;
+    font-style:normal;
+}
+
+.socials a {
+    color:#E5C185;
+    text-decoration: none;
+    font-weight:500;
+}
+
 /* MEDIA QUERY (medium) */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   body {
     max-width: 580px;
     margin: 0 auto;
@@ -139,6 +253,10 @@ hr.divider {
     flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -153,7 +271,10 @@ hr.divider {
     gap:1.5rem;
   }
 
-
+.gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 /* MEDIA QUERY (xl) */
