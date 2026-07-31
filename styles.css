@@ -27,7 +27,16 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-light);
   line-height: 1.6;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+main {
+    width:100%;
+    max-width:580px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 h1 {
@@ -42,17 +51,18 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 1rem 1rem;
+  padding: .5rem 1rem;
   margin: 2rem 0 0 0;
   border-radius: 4px;
-  width: fit-content;
+  width: 100%;
 }
 
 nav a {
   color: var(--primary-color);
   text-decoration: none;
-  font-style: oblique;
+  font-style: normal;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 header {
@@ -61,8 +71,9 @@ header {
     align-items:center;
     background-color:#1F2A44;
     color:#F8F4EC;
-    margin:20px;
-    padding:50px;
+    margin:0px;
+    padding:2.5rem 1rem;
+    width: 100%;
 }
 
 header > h1 {
